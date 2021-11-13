@@ -2,15 +2,18 @@ import os
 import setuptools
 
 # 如果readme文件中有中文，那么这里要指定encoding='utf-8'，否则会出现编码错误
-with open(os.path.join(os.path.dirname(__file__), 'README.rst'), encoding='utf-8') as readme:
+with open(os.path.join(os.path.dirname(__file__), 'README.md'), encoding='utf-8') as readme:
     README = readme.read()
 
 # 允许setup.py在任何路径下执行
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
+# 版本号，每次更新都需要更新该值
+version = '0.0.6'
+
 setuptools.setup(
-    name="azhida-tools",  # 库名，需要在pypi中唯一
-    version="0.0.1",  # 版本号
+    name="azhida_tools",  # 库名，需要在pypi中唯一
+    version=version,  # 版本号
     author="azhida",  # 作者
     author_email="334064034@qq.com",  # 作者邮箱（方便使用者发现问题后联系我们）
     description="常用工具包",  # 简介
