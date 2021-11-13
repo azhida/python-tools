@@ -9,7 +9,7 @@ with open(os.path.join(os.path.dirname(__file__), 'README.md'), encoding='utf-8'
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 # 版本号，每次更新都需要更新该值
-version = '0.0.6'
+version = '0.0.7'
 
 setuptools.setup(
     name="azhida_tools",  # 库名，需要在pypi中唯一

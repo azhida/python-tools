@@ -1,5 +1,9 @@
-# 学习记录
+# 操作记录
 
+删除旧包
+```
+rm -r azhida_tools.egg-info/* build/* dist/*
+```
 打包命令
 ```
 python setup.py sdist bdist_wheel
