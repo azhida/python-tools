@@ -9,7 +9,7 @@ with open(os.path.join(os.path.dirname(__file__), 'README.rst'), encoding='utf-8
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setuptools.setup(
-    name="tools-azhida",  # 库名，需要在pypi中唯一
+    name="azhida-tools",  # 库名，需要在pypi中唯一
     version="0.0.1",  # 版本号
     author="azhida",  # 作者
     author_email="334064034@qq.com",  # 作者邮箱（方便使用者发现问题后联系我们）
