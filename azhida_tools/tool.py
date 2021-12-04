@@ -52,7 +52,7 @@ def log(message, **params):
     touch_file(log_file_name)
 
     logger = logging.getLogger(__name__)
-    handler = logging.FileHandler(log_file_name)
+    handler = logging.FileHandler(log_file_name, encoding='utf-8', mode='a')
     formatter = logging.Formatter('%(asctime)s - %(name)s-%(levelname)s - %(message)s')
     handler.setFormatter(formatter)
     logger.addHandler(handler)
